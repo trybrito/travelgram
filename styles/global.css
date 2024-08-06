@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -mos-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --brand-color: hsl(7, 84%, 62%);
+
+  --background-color: hsl(0, 0%, 100%);
+  --surface-color: hsl(0, 0%, 96%);
+  --skeleton-color: hsl(0, 0%, 85%);
+  --shape-transparency: hsl(0, 0%, 56%);
+
+  --text-color-primary: hsl(0, 0%, 19%);
+  --text-color-secondary: hsl(0, 0%, 42%);
+
+  --font-family: "Poppins", sans-serif;
+  --heading: 32px/125% 700 var(--font-family);
+  --text-lg: 16px/150% var(--font-family); /* font-weight: regular -> default (same for the variables below) */
+  --text-md: 14px/170% var(--font-family);
+  --text-sm: 12px/170% var(--font-family);
+}
+
+body,
+button,
+input,
+textarea,
+select {
+  font-family: var(--font-family);
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color-secondary);
+  font-size: var(--text-md);
+}
