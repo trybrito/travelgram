@@ -5,7 +5,12 @@ main {
   padding-block: 2.4rem;
 }
 
+main div {
+  position: absolute;
+}
+
 main img {
+  position: relative;
   flex: 1;
 
   width: 28.6rem;
@@ -13,4 +18,13 @@ main img {
 
   object-fit: cover;
   aspect-ratio: 16/9;
+
+  box-shadow: 5px 5px 10px #c0c0c0;
+  transition: 250ms ease-in-out;
+}
+
+main img:hover {
+  box-shadow: -5px 5px 10px #c0c0c0;
+  transform: scale(105%) rotateY(180deg);
+  filter: saturate(200%) hue-rotate(5deg) brightness(0.9);
 }

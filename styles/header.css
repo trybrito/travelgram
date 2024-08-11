@@ -16,7 +16,7 @@ div.profile img {
 }
 
 div.profile img:hover {
-  filter: brightness(1.1);
+  filter: brightness(1.1) saturate(110%);
   transform: scale(102%);
 }
 

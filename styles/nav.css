@@ -28,11 +28,12 @@ nav ul li:last-child img {
   height: 40px;
   object-fit: cover;
   border-radius: 50%;
-  transition: 150ms ease-in-out;
+  transition: 250ms linear;
 }
 
 nav ul li:last-child img:hover {
   filter: brightness(0.9);
+  transform: scale(1.05);
 }
 
 nav ul li a {
