@@ -1,0 +1,9 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 2.4rem;
+}
+
+footer div a + a {
+  margin-left: 2.4rem;
+}
