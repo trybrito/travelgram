@@ -7,6 +7,8 @@
 }
 
 :root {
+  font-size: 62.5%; /* 10px */
+
   --brand-color: hsl(7, 84%, 62%);
 
   --background-color: hsl(0, 0%, 100%);
@@ -18,10 +20,10 @@
   --text-color-secondary: hsl(0, 0%, 42%);
 
   --font-family: "Poppins", sans-serif;
-  --heading: 32px/125% 700 var(--font-family);
-  --text-lg: 16px/150% var(--font-family); /* font-weight: regular -> default (same for the variables below) */
-  --text-md: 14px/170% var(--font-family);
-  --text-sm: 12px/170% var(--font-family);
+  --heading: 700 3.2rem/125% var(--font-family); /* font-weight must comes first (because of the sintax of the font shorthand) */
+  --text-lg: 1.6rem/150% var(--font-family); /* font-weight: regular -> default (same for the variables below) */
+  --text-md: 1.4rem/170% var(--font-family);
+  --text-sm: 1.2rem/170% var(--font-family);
 }
 
 body,
@@ -32,8 +34,33 @@ select {
   font-family: var(--font-family);
 }
 
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: var(--brand-color);
+  text-decoration: underline;
+}
+
 body {
   background-color: var(--background-color);
   color: var(--text-color-secondary);
   font-size: var(--text-md);
+}
+
+.container {
+  max-width: 128rem;
+  padding-inline: 3.2rem;
+  margin-inline: auto;
+}
+
+.bg-surface-color {
+  background-color: var(--surface-color);
 }
