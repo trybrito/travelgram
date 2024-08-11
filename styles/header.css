@@ -1,0 +1,53 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 3.2rem;
+}
+
+header > div.profile {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+div.profile img {
+  transition: 250ms ease-in-out;
+}
+
+div.profile img:hover {
+  filter: brightness(1.1);
+  transform: scale(102%);
+}
+
+div.profile-info {
+  width: 38.4rem;
+}
+
+div.profile-info h1 {
+  font: var(--heading);
+  color: var(--text-color-primary);
+  margin-bottom: 0.8rem;
+}
+
+ul.profile-stats {
+  width: 28rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+ul.profile-stats li {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+ul.profile-stats li img {
+  transition: 200ms ease-in-out;
+}
+
+ul.profile-stats li img:hover {
+  filter: saturate(200%);
+  transform: scale(110%);
+}

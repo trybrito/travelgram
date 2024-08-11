@@ -14,11 +14,25 @@ nav ul {
   padding-block: 0.8rem;
 }
 
+nav ul li:first-child img {
+  transition: 250ms ease-in-out;
+}
+
+nav ul li:first-child img:hover {
+  filter: brightness(0.8);
+  transform: scale(0.95);
+}
+
 nav ul li:last-child img {
   width: 40px;
   height: 40px;
   object-fit: cover;
   border-radius: 50%;
+  transition: 150ms ease-in-out;
+}
+
+nav ul li:last-child img:hover {
+  filter: brightness(0.9);
 }
 
 nav ul li a {
