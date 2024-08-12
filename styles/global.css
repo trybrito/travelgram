@@ -24,6 +24,7 @@
   --text-lg: 1.6rem/150% var(--font-family); /* font-weight: regular -> default (same for the variables below) */
   --text-md: 1.4rem/170% var(--font-family);
   --text-sm: 1.2rem/170% var(--font-family);
+  --footer: 1.4rem/150% var(--font-family);
 }
 
 body,
